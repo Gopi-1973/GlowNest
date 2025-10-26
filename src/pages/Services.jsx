@@ -66,7 +66,7 @@ const Services = () => {
  ))} 
  </div>   
 
-      // {selectedService && (
+       {selectedService && (
         <AppointmentModal
           service={selectedService}
           closeModal={() => setSelectedService(null)}
