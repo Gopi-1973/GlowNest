@@ -10,6 +10,7 @@ import eyelashes from "../assets/services/eyelashes.webp";
 import botox from "../assets/services/botox.webp";
 import mehendi from "../assets/services/mehendi.webp";
 import mani_pedi from "../assets/services/mani_pedi.jpeg";
+import SEO from "../components/SEO";
 
  const whatsappNumber = "9779818142024"
 
@@ -30,6 +31,7 @@ const Services = () => {
 
   return (
     <div className="container mx-auto py-16 px-4">
+       <SEO title='Salon Services at Glownest' description='Choose from professional beauty services including bridal makeup, hair styling, facial, nail extension, eyelashes, hair botox, and manicure & pedicure.'/>
       <h2 className="text-4xl font-bold text-gray-600 text-center mb-10">
         Our Services
       </h2>
@@ -38,7 +40,7 @@ const Services = () => {
         { services.map((service) => (
           <div
             key={service.name}
-            className="border rounded-lg shadow-md overflow-hidden h-"
+            className="border rounded-lg shadow-md overflow-hidden hover:scale-105 duration-600"
           >
             <img
               src={service.img}
@@ -66,7 +68,7 @@ const Services = () => {
  ))} 
  </div>   
 
-      // {selectedService && (
+       {selectedService && (
         <AppointmentModal
           service={selectedService}
           closeModal={() => setSelectedService(null)}

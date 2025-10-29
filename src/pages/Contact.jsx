@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../components/SEO";
 
 const Contact = () => {
 const whatsappNumber = "9779818142024"
@@ -36,6 +37,7 @@ const handleSendToWhatsApp = () => {
   
 return (
     <div className="container mx-auto py-16 px-4">
+       <SEO title='Contact Glownest' description='Book beauty services at Glownest easily through WhatsApp. Located in Amrit Nagar, opposite Bhatbhateni Kalanki, Kathmandu.'/>
       <h2 className="text-4xl font-bold text-pink-500 text-center mb-10">
         Contact Us
       </h2>
@@ -104,3 +106,5 @@ export default Contact;
 
   
   
+
+

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: / 
+Sitemap: https://glow-nest-flax.vercel.app/sitemap.xml

@@ -4,18 +4,19 @@ import { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
+    
     <nav className="bg-pink-400 text-white py-6 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center gap-4">
           <img src={logo} alt="logo" className="w-10 h-10 rounded-full object-contain"/>
-        <h1 className="text-3xl font-serif font-bold">Glow Nest</h1>
+        <h1 className="text-3xl font-serif font-bold hover:text-blue-400">Glow Nest</h1>
         </div>
         {/* Dekstop Menu */}
         <ul className="hidden md:flex space-x-6 text-lg font-medium">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
+          <li><Link to="/services" className="hover:text-blue-500">Services</Link></li>
+          <li><Link to="/about" className="hover:text-blue-500">About</Link></li>
+          <li><Link to="/contact" className="hover:text-blue-500">Contact</Link></li>
         </ul>
         {/* Mobile Menu */}
         <button className="md:hidden flex flex-col space-y-1" onClick={() => setIsOpen(!isOpen)}>

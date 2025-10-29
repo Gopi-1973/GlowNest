@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 const App = () => {
  
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
@@ -21,6 +22,7 @@ const App = () => {
       </Routes>
       
     </BrowserRouter>
+    
   )
 }
 

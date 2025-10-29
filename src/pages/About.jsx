@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from '../assets/img2.jpg';
+import SEO from '../components/SEO';
 
 const About = () => (
   <div className="container mx-auto py-20 px-4">
+     <SEO title='About Glownest | Professional Beauty Parlor in Kalanki' description='Discover Glownest, a trusted beauty parlor in Kathmandu offering bridal makeup, skincare, hair services, nail extension, and certified training.'/>
    <div className="flex flex-col md:flex-row justify-between items-center">
     <div className="mb-10 flex flex-col items-center  space-y-6"> 
     <h2 className="text-4xl font-bold text-center mb-6 text-gray-600">About Us</h2>
@@ -18,7 +20,7 @@ const About = () => (
     </div>
      
     </div>
-    <img src={Image} alt="" className="w-[350px] h-[500px] rounded-xl pr-8 "/>
+    <img src={Image} alt="" className="w-[350px] h-[500px] rounded-xl pr-8 hover:scale-105 duration-1000"/>
     </div>
   </div>
 );
